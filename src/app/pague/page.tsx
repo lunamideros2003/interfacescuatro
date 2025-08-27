@@ -1,3 +1,5 @@
+import React from "react";
+
 export default function Page() {
   return (
     <div className="grid" style={{ minHeight: "100vh", placeItems: "center", padding: 24, background: "#f4f5f7" }}>
@@ -39,14 +41,7 @@ export default function Page() {
           <div className="flex" style={{ alignItems: "center", justifyContent: "space-between" }}>
             <div style={{ fontSize: 12, color: "#6b7280" }}>Accent color</div>
             <div className="flex" style={{ alignItems: "center", gap: 16 }}>
-              {[
-                "#f97316",
-                "#f59e0b",
-                "#ef4444",
-                "#22c55e",
-                "#06b6d4",
-                "#a855f7",
-              ].map((c, i) => (
+              {["#f97316", "#f59e0b", "#ef4444", "#22c55e", "#06b6d4", "#a855f7"].map((c, i) => (
                 <span key={i} className="rounded-full" style={{ width: 24, height: 24, backgroundColor: c }} />
               ))}
             </div>
@@ -82,7 +77,7 @@ function ThemeCard({ title, selected, dark }: { title: string; selected?: boolea
       <div className="grid" style={{ placeItems: "center", height: 96, borderRadius: 8, background: dark ? "#2f2b3a" : "#eef0f7" }}>
         <svg width="72" height="44" viewBox="0 0 72 44" fill="none" xmlns="http://www.w3.org/2000/svg">
           <rect x="1" y="1" width="70" height="42" rx="6" fill={dark ? "#26233a" : "#ffffff"} stroke={dark ? "#3f3a55" : "#e6e7ea"} />
-          <rect x="10" y="10" width="52" height="6" rx="3" fill={dark ? "#6d5efc" : "#6d5efc"} />
+          <rect x="10" y="10" width="52" height="6" rx="3" fill="#6d5efc" />
           <rect x="10" y="22" width="36" height="4" rx="2" fill={dark ? "#6b7280" : "#e6e7ea"} />
           <rect x="10" y="30" width="26" height="4" rx="2" fill={dark ? "#6b7280" : "#e6e7ea"} />
         </svg>
@@ -140,4 +135,5 @@ function PhotoIcon() {
     </svg>
   );
 }
+
 
