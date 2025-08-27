@@ -51,7 +51,7 @@ export default function Page() {
               ))}
             </div>
           </div>
-          <p style={{ fontSize: 12, color: "#9ca3af" }}>Pick your platform's main color</p>
+          <p style={{ fontSize: 12, color: "#9ca3af" }}>Pick your platform&apos;s main color</p>
         </div>
 
         <div style={{ height: 1, background: "#edeef1" }} />
